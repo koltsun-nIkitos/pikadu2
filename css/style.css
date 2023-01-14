@@ -1,0 +1,30 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SF Pro Display regular';
+    src: local('SF Pro Display regular'), url('../fonts/SFProDisplay-Regular.woff');
+}
+
+@font-face {
+    font-family: 'SF Pro Display semibold';
+    src: local('SF Pro Display semibold'), url('../fonts/SFProDisplay-Semibold.woff');
+}
+
+body{
+    background: #F5F5F5;
+    font-family: 'SF Pro Display regular', sans-serif;
+}
+
+.logo-img{
+    fill: white;
+    width: 48px;
+    height: 13px;
+}
+
+.search-icon{
+    fill: #FA8C16;
+    width: 14px;
+    height: 14px;
+}
