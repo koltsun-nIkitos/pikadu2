@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Pikadu - Главная</title>
@@ -76,35 +77,31 @@
                 </div>
                 <div class="post-footer">
                     <div class="post-buttons">
-                        <button type="submit" class="post-button">
-                            <div class="like-icon post-icon">
-
-                            </div>
+                        <a type="submit" class="post-button like">
+                            
                             <span class="button-counter">
                                 26
                             </span>
-                        </button>
+                        </a>
 
-                        <button type="submit" class="post-button">
-                            <div class="comment-icon post-icon">
-
-                            </div>
+                        <a type="submit" class="post-button comment">
+                            
                             <span class="button-counter">
                                 157
                             </span>
-                        </button>
+                        </a>
 
-                        <button type="submit" class="post-button">
-                            <div class="save-icon post-icon">
+                        <a type="submit" class="post-button">
+                            <svg width="20" height="20" class="save-icon">
+                                <use xlink:href="img/icons.svg#save-icon"></use>
+                            </svg>
+                        </a>
 
-                            </div>
-                        </button>
-
-                        <button type="submit" class="post-button">
-                            <div class="share-icon post-icon">
-
-                            </div>
-                        </button>
+                        <a type="submit" class="post-button">
+                            <svg width="18" height="20" class="share-icon">
+                                <use xlink:href="img/icons.svg#share-icon"></use>
+                            </svg>
+                        </a>
                     </div>
                     <a href="#" class="post-user">
                         <div class="user-info">
@@ -154,35 +151,31 @@
                 </div>
                 <div class="post-footer">
                     <div class="post-buttons">
-                        <button type="submit" class="post-button">
-                            <div class="like-icon post-icon">
-
-                            </div>
+                        <a type="submit" class="post-button like">
+                            
                             <span class="button-counter">
                                 26
                             </span>
-                        </button>
+                        </a>
 
-                        <button type="submit" class="post-button">
-                            <div class="comment-icon post-icon">
-
-                            </div>
+                        <a type="submit" class="post-button comment">
+                            
                             <span class="button-counter">
                                 157
                             </span>
-                        </button>
+                        </a>
 
-                        <button type="submit" class="post-button">
-                            <div class="save-icon post-icon">
+                        <a type="submit" class="post-button">
+                            <svg width="20" height="20" class="save-icon">
+                                <use xlink:href="img/icons.svg#save-icon"></use>
+                            </svg>
+                        </a>
 
-                            </div>
-                        </button>
-
-                        <button type="submit" class="post-button">
-                            <div class="share-icon post-icon">
-
-                            </div>
-                        </button>
+                        <a type="submit" class="post-button">
+                            <svg width="18" height="20" class="share-icon">
+                                <use xlink:href="img/icons.svg#share-icon"></use>
+                            </svg>
+                        </a>
                     </div>
                     <a href="#" class="post-user">
                         <div class="user-info">
@@ -203,13 +196,18 @@
             <div class="sidebar-menu">
                 <div class="sidebar-menu-header">
                     <a href="#" class="user">
-                        <img src="img/user1.jpg" alt="user-avatar" class="user-avatar">
+                        <div class="user-avatar">
+
+                        </div>
+                        <!-- <img src="img/user1.jpg" alt="user-avatar" class="user-avatar"> -->
                         <p class="user-name">
                             Koltsun-Nik
                         </p>
                     </a>
                     <a href="#" class="logout">
-                        <img src="" alt="exit" class="exit-image">
+                        <svg class="exit-icon" width="22" height="22">
+                            <use xlink:href="img/icons.svg#exit-icon"></use>
+                        </svg>
                     </a>
                 </div>
 
@@ -221,7 +219,7 @@
                         <li class="menu-item-sidebar">
                             <a href="#" class="menu-link-sidebar">Комментарии</a>
                         </li>
-                        <li class="menu-item-sidebar">
+                        <li class="menu-item-sidebar active">
                             <a href="#" class="menu-link-sidebar">Оценки</a>
                         </li>
                         <li class="menu-item-sidebar">
@@ -241,31 +239,41 @@
             </div>
             <!-- /.sidebar-menu -->
 
-            <a href="#" class="sidebar-button">
-                <img src="" alt="sidebar icon fire" class="sidebar-button-img">
-                <p class="sidebar-button-text">Опубликовать пост</p>
+            <a href="./new_post.html" class="button-public">
+                    <svg class="icon fire-icon">
+                        <use xlink:href="img/icons.svg#fire"></use>
+                    </svg>
+                    <span>Опубликовать пост</span>
             </a>
             <!-- /.sidebar-button -->
 
-            <div class="sidebar-notes">
-                <h3 class="notes-title">Комментарий дня</h3>
-                <h4 class="notes-subtitle">Как обмануть банкомат, если вы хотите снять больше наличных</h4>
-                <p class="notes-text">
-                    Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. 
-                    Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, 
-                    занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация... (НУЖНО ОГРАНИЧИТЬ ТЕКС)
-                </p>
-            </div>
+            <a href="#" class="sidebar-notes">
+                <div class="sidebar-notes-header">
+                    <h3 class="notes-title">Комментарий дня</h3>
+                </div>
+                <div class="sidebar-notes-content">
+                    <h4 class="notes-subtitle">Как обмануть банкомат, если вы хотите снять больше наличных</h4>
+                    <p class="notes-text">
+                        Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. 
+                        Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, 
+                        занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация...
+                        Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, 
+                        занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация... 
+                    </p>
+                </div>
+            </a>
             <!-- /.sidebar-notes -->
 
-            <div class="sidebar-ads">
+            <a href="#" class="sidebar-ads">
                 <div class="plate">
                     <p class="ads-title">Реклама</p>
                 </div>
-            </div>
+            </a>
             <!-- /.sidebar-ads -->
         </div>
         <!-- /.sidebar -->
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
